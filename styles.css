@@ -86,7 +86,7 @@ iframe {
 	max-height: 30em;
 	padding: 2em;
 	background-color: white;
-	opacity: .5;
+	opacity: .3;
 	border-radius: 50px;
 	z-index: 1;
 	transition: .5s;

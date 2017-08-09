@@ -4,9 +4,18 @@ html {
     width: 100%;
     padding: 0;
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+	display: flex;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -17,4 +26,94 @@ body {
     height: 100%;
     width: 100%;
     background-color: red;
+}
+
+* {
+    margin: 0;
+}
+
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: sepia(1);
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+    iframe {
+        height: 300%;
+        top: -100%;/
+    }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+    iframe {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+.header-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	align-self: center;
+	flex-direction: column;
+	margin: auto;
+	width: 50%;
+	max-width: 20em;
+	min-width: 10em;
+	max-height: 18em;
+	font-size: 200%;
+	background-color: rgba(255,255,255,.2);
+}
+.main-header {
+	color: white;
+}
+
+hr {
+	width: 80%;
+	opacity: .4;
+}
+
+a {
+}
+
+.logo-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.logo-a {
+	width: 30%;
+	height: 30%;
+	margin: 1em;
+	transition: .5s;
+	padding: 5px;
+
+}
+
+.logo-a:hover {
+	background-color: rgba(255,255,255,.3);
+	transition: .5s;
+}
+
+.logo-img {
+	width: 100%;
+	height: 100%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.logo-a {
+		width: 50%;
+		height: 5%;
+		margin: .3em;
+	}
 }

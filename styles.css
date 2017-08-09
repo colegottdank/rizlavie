@@ -1,5 +1,11 @@
 /* Block styles */
 html {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -77,13 +83,22 @@ iframe {
 	min-width: 10em;
 	max-height: 30em;
 	padding: 2em;
-	background-color: rgba(255,255,255,.5);
+	background-color: white;
+	opacity: .7;
 	border-radius: 50px;
 	z-index: 1;
+	transition: .5s;
 }
+
+.header-wrapper:hover {
+	opacity: .9;
+   transition: .5s;
+}
+
 .main-header {
 	font-size: 250%;
-	color: #f1f1f1;
+	color: black;
+	cursor: default;
 }
 
 hr {
@@ -112,7 +127,7 @@ a {
 }
 
 .logo-a:hover {
-	background-color: rgba(255,255,255,.3);
+	background-color: rgba(0,0,0,.3);
 	border-radius: 25px;
 	transition: .5s;
 }
